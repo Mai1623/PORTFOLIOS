@@ -1,0 +1,297 @@
+<html>
+	<head>
+		<title> Ejercicio de tablas </title>
+	</head>
+	
+	<body>
+	<h3>Ejemplo</h3>
+		<table border="1">
+		<caption> Medallas Juegos Olimpicos</caption>
+	<colgroup>
+		<col style="background-color: yellow" />
+		<col style="background-color: red"/>
+	</colgroup>
+			<thead>
+				<tr>
+					<th>País</th>
+					<th>Oro</th>
+					<th>Plata</th>
+					<th>Bronce</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>USA</td>
+					<td>110</td>
+					<td>115</td>
+					<td>99</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+			<td>Total</td>
+					<td>219</td>
+					<td>247</td>
+					<td>206</td>
+			</tr>
+			</tfoot>
+		</table>
+		
+	<ol>
+		<li> <!-- Ejercicio 1 -->
+			<table border="1">
+				<tr>
+					<td class="a">A</td>
+					<td class="b">B</td>
+				</tr>
+
+				<tr>
+					<td class="c" rowspan="4">C</td>
+					<td class="d">D1</td>
+				</tr>
+
+				<tr>
+					<td class="d">D2</td>
+				</tr>
+
+				<tr>
+					<td class="d">D3</td>
+				</tr>
+
+				<tr>
+					<td class="d">D4</td>
+				</tr>
+			</table>
+			
+		</li>
+		
+		<li>  <!-- Ejercicio 2 -->
+
+			<table border="1"><tr>
+					<td colspan="2">A</td>
+				</tr>
+				<tr>
+					<td>
+						<table border="1">
+							<tr>
+								<td>B1</td>
+							</tr>
+							<tr>
+								<td>B2</td>
+							</tr>
+							<tr>
+								<td>B3</td>
+							</tr>
+						</table>
+					</td>
+
+					<td>
+						<table border="1">
+							<tr>
+								<td>C1</td>
+								<td>C2</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</li>
+		
+		<li>  <!-- Ejercicio 3 -->
+			<table border="1">
+				<tr>
+					<!-- A -->
+					<td>
+						<table border="1">
+							<tr>
+								<td>A1</td>
+							</tr>
+							<tr>
+								<td>A2</td>
+							</tr>
+						</table>
+					</td>
+
+					<!-- B -->
+					<td>
+						<table border="1">
+							<tr>
+								<td>
+									<table>
+										<tr>
+											<td>B1</td>
+										</tr>
+									</table>
+								</td>
+
+								<td>
+									<table border="1">
+										<tr>
+											<td>B1-1</td>
+										</tr>
+										<tr>
+											<td>B1-2</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<!-- C -->
+					<td>
+						<table border="1">
+							<tr>
+								<td>
+									<table border="1">
+										<tr>
+											<td>C1</td>
+										</tr>
+									</table>
+								</td>
+
+								<td>
+									<table border="1">
+										<tr>
+											<td>C1-1</td>
+										</tr>
+										<tr>
+											<td>C1-2</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+
+					<!-- D -->
+					<td>
+						<table border="1">
+							<tr>
+								<td>D1</td>
+							</tr>
+							<tr>
+								<td>D2</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+			</table>
+		</li>
+		
+		<!-- ejercicio 4 -->
+		<li>
+			<table border="1">
+
+				<tr>
+					<th>Pa&iacute;s</th>
+					<th>Datos econ.</th>
+				</tr>
+
+				<!-- España -->
+				<tr>
+					<td>Espa&ntilde;a</td>
+
+					<td>
+						<table  border="1">
+							<tr>
+								<td>PIB:-0,1%</td>
+							</tr>
+							<tr>
+								<td>D&eacute;ficit:5%</td>
+							</tr>
+							<tr>
+								<td>Paro 25,4%</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<!-- USA -->
+				<tr>
+					<td>USA</td>
+
+					<td>
+						<table  border="1">
+							<tr>
+								<td>PIB:0,4%</td>
+							</tr>
+							<tr>
+								<td>D&eacute;ficit:3%</td>
+							</tr>
+							<tr>
+								<td>Paro:11%</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+			</table>
+		</li>
+		<!-- ejercicio 5 -->
+		<li>
+			<table border="1">
+				<!-- ESPAÑA -->
+				<tr>
+					<td rowspan="1">Espa&ntilde;a</td>
+
+					<td colspan="2">
+						<table border="1">
+							<tr>
+								<td>I+D:7%</td>
+								<td>IRS:13%</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<!-- ALCA -->
+				<tr>
+					<td>ALCA</td>
+
+					<td colspan="2">
+						<table border="1">
+							<tr>
+								<td>I+D:3%</td>
+								<td>Felic:38</td>
+								<td>Resto:42%</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<!-- UE -->
+				<tr>
+					<td rowspan="2">UE</td>
+
+					<td colspan="2">
+						<table border="1">
+							<tr>
+								<td>Espa&ntilde;a</td>
+								<td>I+D:8%</td>
+								<td>SS:25%</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="2">
+						<table border="1">
+							<tr>
+								<td>Resto UE</td>
+								<td>I+D:13%</td>
+								<td>Otros:28%</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</li>
+	</ol>
+
+	</body>
+</html>
