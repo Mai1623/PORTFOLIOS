@@ -1,0 +1,506 @@
+    /* CONFIGURACIÓN GENERAL */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f5f5f5;
+        color: #252525;
+        line-height: 1.6;
+    }
+
+    /* CABECERA */
+
+    .cabecera {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 22px 8%;
+        background-color: #ffffff;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .logo {
+        font-size: 21px;
+        font-weight: bold;
+        color: #252525;
+        text-decoration: none;
+    }
+
+    .logo span {
+        color: #777777;
+    }
+
+    nav {
+        display: flex;
+        gap: 25px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #555555;
+        font-size: 14px;
+    }
+
+    nav a:hover {
+        color: #000000;
+    }
+
+    /* PRESENTACIÓN PRINCIPAL */
+
+    .presentacion {
+        padding: 100px 8%;
+        background-color: #eeeeee;
+    }
+
+    .etiqueta {
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: #777777;
+        margin-bottom: 15px;
+    }
+
+    .presentacion h1 {
+        font-size: 56px;
+        line-height: 1.15;
+        margin-bottom: 20px;
+    }
+
+    .presentacion h1 span {
+        color: #777777;
+    }
+
+    .descripcion {
+        max-width: 520px;
+        color: #666666;
+        margin-bottom: 30px;
+    }
+
+    .boton {
+        display: inline-block;
+        background-color: #292929;
+        color: white;
+        padding: 12px 22px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    .boton:hover {
+        background-color: #555555;
+    }
+
+    /* SECCIONES */
+
+    .seccion {
+        padding: 75px 8%;
+    }
+
+    .titulo-seccion {
+        margin-bottom: 30px;
+    }
+
+    .titulo-seccion h2,
+    .sobre-mi h2 {
+        font-size: 30px;
+        margin-bottom: 8px;
+    }
+
+    .titulo-seccion > p:last-child {
+        color: #777777;
+    }
+
+    /* TARJETAS DE LOS TEMAS */
+
+    .rejilla {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 22px;
+    }
+
+    .tarjeta {
+        background-color: #ffffff;
+        padding: 28px;
+        border: 1px solid #e5e5e5;
+        border-radius: 8px;
+        transition: transform 0.2s;
+    }
+
+    .tarjeta:hover {
+        transform: translateY(-4px);
+    }
+
+    .numero {
+        color: #888888;
+        font-size: 11px;
+        letter-spacing: 1px;
+        margin-bottom: 18px;
+    }
+
+    .tarjeta h3 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .tarjeta > p:not(.numero) {
+        color: #777777;
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .enlace {
+        color: #333333;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .enlace:hover {
+        color: #888888;
+    }
+
+    /* SOBRE MÍ */
+
+    .sobre-mi {
+        padding: 65px 8%;
+        background-color: #eaeaea;
+    }
+
+    .sobre-mi > p:last-child {
+        max-width: 650px;
+        color: #666666;
+    }
+
+    /* PIE DE PÁGINA */
+
+    footer {
+        padding: 25px;
+        text-align: center;
+        background-color: #ffffff;
+        border-top: 1px solid #e5e5e5;
+        color: #888888;
+        font-size: 13px;
+    }
+
+    /* PÁGINAS DE LOS TEMAS */
+
+    .contenido-tema {
+        padding: 65px 8%;
+        min-height: 75vh;
+    }
+
+    .volver {
+        display: inline-block;
+        margin-bottom: 30px;
+        color: #666666;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .contenido-tema h1 {
+        font-size: 38px;
+        margin-bottom: 10px;
+    }
+
+    .introduccion-tema {
+        color: #777777;
+        margin-bottom: 35px;
+    }
+
+    .grupo-lenguaje {
+        background-color: #ffffff;
+        padding: 25px;
+        margin-bottom: 20px;
+        border: 1px solid #e5e5e5;
+        border-radius: 8px;
+    }
+
+    .grupo-lenguaje h2 {
+        font-size: 19px;
+        margin-bottom: 15px;
+    }
+
+    .lista-ejercicios {
+        list-style: none;
+    }
+
+    .lista-ejercicios li {
+        padding: 12px 0;
+        border-top: 1px solid #eeeeee;
+    }
+
+    .lista-ejercicios a {
+        color: #444444;
+        text-decoration: none;
+    }
+
+    .lista-ejercicios a:hover {
+        color: #888888;
+    }
+
+    /* ADAPTACIÓN A MÓVILES */
+
+    @media (max-width: 750px) {
+
+        .cabecera {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        nav {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 18px;
+        }
+
+        .presentacion {
+            padding: 70px 7%;
+        }
+
+        .presentacion h1 {
+            font-size: 42px;
+        }
+
+        .seccion {
+            padding: 55px 7%;
+        }
+
+        .rejilla {
+            grid-template-columns: 1fr;
+        }
+
+        .sobre-mi {
+            padding: 50px 7%;
+        }
+
+        .contenido-tema {
+            padding: 45px 7%;
+        }
+
+        .contenido-tema h1 {
+            font-size: 30px;
+        }
+    }
+
+    4. Página de cada tema: tema1.html
+
+    Ahora crea una carpeta llamada tema1 y, dentro, un archivo tema1.html.
+
+    Esta página mostrará los ejercicios separados por lenguaje de programación.
+
+
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Tema 1 | Programación</title>
+
+        <!-- Utilizamos el mismo CSS que la página principal -->
+        <link rel="stylesheet" href="../style.css">
+    </head>
+
+    <body>
+
+        <!-- Cabecera -->
+        <header class="cabecera">
+            <a href="../index.html" class="logo">Mi Portfolio<span>.</span></a>
+
+            <nav>
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html#temas">Temas</a>
+                <a href="../index.html#sobre-mi">Sobre mí</a>
+            </nav>
+        </header>
+
+        <main class="contenido-tema">
+
+            <!-- Enlace para volver a la página principal -->
+            <a href="../index.html" class="volver">← Volver al inicio</a>
+
+            <p class="etiqueta">PROGRAMACIÓN · 1.º DAW</p>
+
+            <h1>Tema 1</h1>
+
+            <p class="introduccion-tema">
+                Ejercicios y prácticas del tema 1, organizados por lenguaje.
+            </p>
+
+            <!-- EJERCICIOS DE PSEUDOCÓDIGO -->
+            <section class="grupo-lenguaje">
+
+                <h2>Pseudocódigo</h2>
+
+                <ul class="lista-ejercicios">
+                    <li>
+                        <a href="PSEUDOCODIGO/ejercicio1.doc">
+                            Ejercicio 1
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="PSEUDOCODIGO/ejercicio2.doc">
+                            Ejercicio 2
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="PSEUDOCODIGO/ejercicio3.doc">
+                            Ejercicio 3
+                        </a>
+                    </li>
+                </ul>
+
+            </section>
+
+            <!-- EJERCICIOS DE JAVA -->
+            <section class="grupo-lenguaje">
+
+                <h2>Java</h2>
+
+                <ul class="lista-ejercicios">
+                    <li>
+                        <a href="JAVA/Ejercicio1.java">
+                            Ejercicio 1
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="JAVA/Ejercicio2.java">
+                            Ejercicio 2
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="JAVA/Ejercicio3.java">
+                            Ejercicio 3
+                        </a>
+                    </li>
+                </ul>
+
+            </section>
+
+            <!-- EJERCICIOS DE PYTHON -->
+            <section class="grupo-lenguaje">
+
+                <h2>Python</h2>
+
+                <ul class="lista-ejercicios">
+                    <li>
+                        <a href="PYTHON/ejercicio1.py">
+                            Ejercicio 1
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="PYTHON/ejercicio2.py">
+                            Ejercicio 2
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="PYTHON/ejercicio3.py">
+                            Ejercicio 3
+                        </a>
+                    </li>
+                </ul>
+
+            </section>
+
+        </main>
+
+        <!-- Pie de página -->
+        <footer>
+            <p>Portfolio de Programación · 1.º DAW</p>
+        </footer>
+
+    </body>
+    </html>
+
+    5. Cómo organizar los ejercicios
+
+    Dentro de tema1, crea las tres carpetas con estos nombres exactos:
+
+    PSEUDOCODIGO
+
+    Guarda aquí los documentos .doc.
+
+    Ejemplo: ejercicio1.doc
+
+    JAVA
+
+    Guarda aquí los archivos .java.
+
+    Ejemplo: Ejercicio1.java
+
+    PYTHON
+
+    Guarda aquí los archivos .py.
+
+    Ejemplo: ejercicio1.py
+
+    Importante: los nombres de los archivos deben coincidir exactamente con los que has puesto en los enlaces del HTML. Si tus ejercicios se llaman de otra forma, cambia el nombre en el enlace.
+
+    Por ejemplo, si tu archivo se llama HolaMundo.java, cambia esta línea:
+
+    <a href="JAVA/Ejercicio1.java">Ejercicio 1</a>
+
+    por esta:
+
+    <a href="JAVA/HolaMundo.java">Hola Mundo</a>
+
+    6. Cómo crear los temas 2, 3 y siguientes
+
+    Para que los enlaces de la página principal funcionen, crea también estas carpetas y archivos:
+    text
+
+    portfolio-programacion/
+    ├── index.html
+    ├── style.css
+    ├── tema1/
+    │   ├── tema1.html
+    │   ├── PSEUDOCODIGO/
+    │   ├── JAVA/
+    │   └── PYTHON/
+    ├── tema2/
+    │   ├── tema2.html
+    │   ├── PSEUDOCODIGO/
+    │   ├── JAVA/
+    │   └── PYTHON/
+    └── tema3/
+        ├── tema3.html
+        ├── PSEUDOCODIGO/
+        ├── JAVA/
+        └── PYTHON/
+
+    La forma más sencilla es copiar tema1.html dentro de la carpeta tema2, guardarlo como tema2.html y cambiar el título y el texto de la página a «Tema 2». Haz lo mismo para el tema 3. Después, adapta los enlaces a los nombres de tus ejercicios.
+
+    No necesitas crear un CSS diferente para cada tema: todos utilizarán el mismo style.css.
+    7. Cómo abrir y comprobar el portfolio
+
+        Guarda los tres archivos HTML/CSS en sus ubicaciones correspondientes.
+
+        Coloca tus ejercicios dentro de sus carpetas.
+
+        Abre index.html con tu navegador, por ejemplo, Chrome.
+
+        Pulsa «Ver ejercicios» en cualquiera de las tarjetas y comprueba que se abre la página del tema.
+
+        Entra en cada enlace para verificar que apunta al archivo correcto.
+
+    Con esto tendrás una web sencilla, organizada y adaptable a móviles, sin necesidad de instalar nada adicional.
+
+    Mi consejo: conserva el diseño tal como está al principio. Cuando tengas todos los temas y ejercicios organizados, puedes cambiar los textos de presentación, los nombres de los temas y los títulos de los ejercicios para que el portfolio refleje exactamente tu trabajo de clase.
+
+ChatGPT es una IA y puede equivocarse.
+Chat con ChatGPT
