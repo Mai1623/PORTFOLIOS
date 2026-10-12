@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Configuración básica para que la página funcione en distintos dispositivos. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Color de la interfaz del navegador en dispositivos compatibles. -->
+    <meta name="theme-color" content="#10111f">
+
+    <!-- Título que aparece en la pestaña del navegador. -->
+    <title>Portfolio | Bases de Datos</title>
+
+    <!-- Conecta la página con la hoja de estilos compartida. -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CABECERA: contiene el logo y la navegación principal. -->
+    <header>
+        <a href="index.html" class="logo">
+            portfolio<span>.bbdd</span>
+        </a>
+
+        <!-- Enlaces internos para desplazarse por la página. -->
+        <nav aria-label="Navegación principal">
+            <a href="index.html">Inicio</a>
+            <a href="#temas">Temas</a>
+            <a href="#sobre-mi">Sobre mí</a>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL DE LA PÁGINA. -->
+    <main>
+
+        <!-- PORTADA: presenta la asignatura y el objetivo del portfolio. -->
+        <section class="portada">
+            <p class="etiqueta">DAW / MÓDULO DE FORMACIÓN</p>
+
+            <h1>
+                Bases de Datos.<br>
+                <span>Aprender y practicar.</span>
+            </h1>
+
+            <p class="descripcion">
+                Bienvenido a mi portfolio de Bases de Datos.
+                Aquí organizo los temarios, apuntes, ejercicios y
+                exámenes de los cinco temas de la asignatura.
+            </p>
+
+            <!-- Este botón lleva directamente al índice de temas. -->
+            <a href="#temas" class="boton">
+                Explorar temas ↓
+            </a>
+        </section>
+
+        <!-- SECCIÓN DE TEMAS: cada tarjeta abre su propia página HTML. -->
+        <section id="temas" class="seccion">
+
+            <p class="etiqueta">01 / CONTENIDO</p>
+            <h2>Mis temas</h2>
+
+            <p class="descripcion">
+                Selecciona una unidad para consultar sus materiales.
+            </p>
+
+            <!-- La rejilla coloca las tarjetas en columnas adaptables. -->
+            <div class="rejilla">
+
+                <!-- TARJETA DEL TEMA 1. -->
+                <article class="tarjeta">
+                    <p class="numero">UNIDAD 01</p>
+                    <h3>Tema 1</h3>
+                    <p>
+                        Teoría, apuntes, actividades y exámenes
+                        de la primera unidad.
+                    </p>
+                    <a href="tema1/index.html">Abrir tema →</a>
+                </article>
+
+                <!-- TARJETA DEL TEMA 2. -->
+                <article class="tarjeta">
+                    <p class="numero">UNIDAD 02</p>
+                    <h3>Tema 2</h3>
+                    <p>
+                        Recursos y documentación para estudiar
+                        la segunda unidad.
+                    </p>
+                    <a href="tema2/index.html">Abrir tema →</a>
+                </article>
+
+                <!-- TARJETA DEL TEMA 3. -->
+                <article class="tarjeta">
+                    <p class="numero">UNIDAD 03</p>
+                    <h3>Tema 3</h3>
+                    <p>
+                        Material de estudio y ejercicios prácticos
+                        de la tercera unidad.
+                    </p>
+                    <a href="tema3/index.html">Abrir tema →</a>
+                </article>
+
+                <!-- TARJETA DEL TEMA 4. -->
+                <article class="tarjeta">
+                    <p class="numero">UNIDAD 04</p>
+                    <h3>Tema 4</h3>
+                    <p>
+                        Apuntes, teoría y actividades de la
+                        cuarta unidad.
+                    </p>
+                    <a href="tema4/index.html">Abrir tema →</a>
+                </article>
+
+                <!-- TARJETA DEL TEMA 5. -->
+                <article class="tarjeta">
+                    <p class="numero">UNIDAD 05</p>
+                    <h3>Tema 5</h3>
+                    <p>
+                        Recursos y materiales para repasar
+                        la quinta unidad.
+                    </p>
+                    <a href="tema5/index.html">Abrir tema →</a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- SOBRE MÍ: explica para qué utilizas el portfolio. -->
+        <section id="sobre-mi" class="seccion">
+
+            <p class="etiqueta">02 / SOBRE MÍ</p>
+
+            <div class="bloque">
+                <h2>Aprender. Practicar. Mejorar.</h2>
+
+                <p>
+                    Soy estudiante de Desarrollo de Aplicaciones Web (DAW).
+                    Utilizo este portfolio para organizar mis materiales,
+                    practicar consultas SQL y documentar mis avances
+                    durante el curso.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA: información general del proyecto. -->
+    <footer>
+        <span>Portfolio DAW · Bases de Datos</span>
+        <span>Desarrollado con HTML y CSS</span>
+        <span>© 2026</span>
+    </footer>
+
+</body>
+</html>

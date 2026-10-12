@@ -1,0 +1,475 @@
+/* ==================================================
+   1. VARIABLES: COLORES Y ESTILO GENERAL
+   Cambia estos valores para modificar el aspecto
+   de todas las páginas a la vez.
+   ================================================== */
+
+:root {
+    --fondo: #10111f;
+    --panel: #1a1c30;
+    --panel-hover: #242741;
+    --violeta: #a78bfa;
+    --azul: #60a5fa;
+    --menta: #5eead4;
+    --texto: #f1f5f9;
+    --suave: #a5afc5;
+    --borde: #343750;
+}
+
+/* Evita que los bordes aumenten el tamaño de los elementos. */
+* {
+    box-sizing: border-box;
+}
+
+/* Hace que los enlaces internos se desplacen suavemente. */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos generales de todas las páginas. */
+body {
+    margin: 0;
+    color: var(--texto);
+    background-color: var(--fondo);
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.7;
+
+    /* Fondo decorativo con luces de color. */
+    background-image:
+        radial-gradient(
+            ellipse at 10% 5%,
+            rgba(167, 139, 250, 0.13),
+            transparent 35%
+        ),
+        radial-gradient(
+            ellipse at 90% 45%,
+            rgba(94, 234, 212, 0.08),
+            transparent 35%
+        );
+    background-attachment: fixed;
+}
+
+/* ==================================================
+   2. CABECERA Y NAVEGACIÓN
+   Contiene el logo y los enlaces principales.
+   ================================================== */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    padding: 22px 8%;
+    background: rgba(16, 17, 31, 0.92);
+    border-bottom: 1px solid var(--borde);
+}
+
+/* Estilo del nombre del portfolio. */
+.logo {
+    color: var(--texto);
+    font-size: 1.4rem;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+/* Resalta una parte del logo. */
+.logo span {
+    color: var(--menta);
+}
+
+/* Coloca los enlaces de navegación en horizontal. */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+/* Estilo de los enlaces de navegación. */
+nav a {
+    color: var(--suave);
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+/* Cambia el color cuando pasamos el ratón. */
+nav a:hover {
+    color: var(--menta);
+}
+
+/* Indicador visual al navegar con el teclado. */
+a:focus-visible {
+    outline: 2px solid var(--menta);
+    outline-offset: 5px;
+}
+
+/* ==================================================
+   3. CONTENEDOR PRINCIPAL
+   Centra el contenido y limita su anchura.
+   ================================================== */
+
+main {
+    width: min(1050px, 88%);
+    margin: auto;
+}
+
+/* ==================================================
+   4. PORTADA DE CADA PÁGINA
+   Presenta el nombre del portfolio o del tema.
+   ================================================== */
+
+.portada {
+    position: relative;
+    padding: 85px 0 70px;
+    border-bottom: 1px solid var(--borde);
+
+    /* Animación de entrada. */
+    animation: aparecer 0.8s ease both;
+}
+
+/* Texto pequeño que identifica cada sección. */
+.etiqueta {
+    color: var(--menta);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Título principal de la página. */
+h1 {
+    margin: 15px 0;
+    color: var(--texto);
+    font-size: clamp(2.7rem, 7vw, 5rem);
+    line-height: 1.1;
+    letter-spacing: -2px;
+}
+
+/* Color especial para destacar palabras del título. */
+h1 span {
+    color: var(--violeta);
+}
+
+/* Texto descriptivo de la portada. */
+.descripcion {
+    max-width: 650px;
+    color: var(--suave);
+    font-size: 1.05rem;
+}
+
+/* ==================================================
+   5. BOTONES
+   Enlaces destacados para desplazarse por la página.
+   ================================================== */
+
+.boton {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 12px 20px;
+
+    color: var(--fondo);
+    background: var(--menta);
+    border: 1px solid var(--menta);
+    border-radius: 7px;
+
+    font-weight: 800;
+    text-decoration: none;
+
+    transition:
+        transform 0.2s,
+        background 0.2s,
+        box-shadow 0.2s;
+}
+
+/* Efecto al pasar el ratón por el botón. */
+.boton:hover {
+    background: var(--violeta);
+    border-color: var(--violeta);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(167, 139, 250, 0.2);
+}
+
+/* ==================================================
+   6. SECCIONES
+   Organizan los bloques de contenido de la página.
+   ================================================== */
+
+.seccion {
+    padding: 55px 0;
+}
+
+/* Títulos de las secciones. */
+h2 {
+    margin-top: 8px;
+    color: var(--texto);
+    font-size: 2rem;
+    letter-spacing: -0.7px;
+}
+
+/* ==================================================
+   7. REJILLA DE TARJETAS
+   Organiza los temas o categorías en columnas.
+   ================================================== */
+
+.rejilla {
+    display: grid;
+
+    /* Tres columnas que se adaptan al espacio disponible. */
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+/* ==================================================
+   8. TARJETAS ANIMADAS
+   Cada tarjeta representa un tema o una categoría.
+   ================================================== */
+
+.tarjeta {
+    position: relative;
+    overflow: hidden;
+
+    padding: 25px;
+    background: rgba(26, 28, 48, 0.92);
+    border: 1px solid var(--borde);
+    border-radius: 12px;
+
+    /* Transiciones suaves para las interacciones. */
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
+
+    /* Las tarjetas aparecen ligeramente escalonadas. */
+    animation: aparecer 0.7s ease both;
+}
+
+/* Retrasos diferentes para dar sensación de movimiento. */
+.tarjeta:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.tarjeta:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.tarjeta:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.tarjeta:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+/* Línea decorativa en la parte superior de cada tarjeta. */
+.tarjeta::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 3px;
+
+    background: linear-gradient(
+        90deg,
+        var(--violeta),
+        var(--azul),
+        var(--menta)
+    );
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+/* La tarjeta se eleva y cambia de aspecto al pasar el ratón. */
+.tarjeta:hover {
+    transform: translateY(-7px);
+    border-color: var(--violeta);
+    background: var(--panel-hover);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* La línea superior aparece al interactuar. */
+.tarjeta:hover::before {
+    transform: scaleX(1);
+}
+
+/* Número o etiqueta de cada tarjeta. */
+.numero {
+    color: var(--menta);
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+/* Título de las tarjetas. */
+.tarjeta h3 {
+    margin: 12px 0;
+    color: var(--texto);
+    font-size: 1.3rem;
+}
+
+/* Descripción de cada tema o categoría. */
+.tarjeta p:not(.numero) {
+    color: var(--suave);
+    font-size: 0.92rem;
+}
+
+/* Enlaces para abrir los temas y sus materiales. */
+.tarjeta a {
+    display: inline-block;
+    margin-top: 12px;
+    color: var(--menta);
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+/* Cambia el color del enlace al interactuar. */
+.tarjeta a:hover {
+    color: var(--violeta);
+}
+
+/* ==================================================
+   9. BLOQUES INFORMATIVOS
+   Útiles para el apartado "Sobre mí" y otros textos.
+   ================================================== */
+
+.bloque {
+    margin: 25px 0;
+    padding: 28px;
+
+    background: var(--panel);
+    border: 1px solid var(--borde);
+    border-left: 4px solid var(--violeta);
+    border-radius: 10px;
+}
+
+/* Evita un margen excesivo en el título del bloque. */
+.bloque h2 {
+    margin-top: 0;
+}
+
+/* Texto secundario del bloque. */
+.bloque p {
+    color: var(--suave);
+}
+
+/* ==================================================
+   10. PIE DE PÁGINA
+   Incluye información y enlaces de regreso.
+   ================================================== */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    padding: 25px 8%;
+    background: #0c0d18;
+    border-top: 1px solid var(--borde);
+
+    color: var(--suave);
+    font-size: 0.85rem;
+}
+
+/* Enlaces del pie de página. */
+footer a {
+    color: var(--menta);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--violeta);
+}
+
+/* ==================================================
+   11. ANIMACIÓN DE ENTRADA
+   Hace que los elementos aparezcan suavemente.
+   ================================================== */
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==================================================
+   12. DISEÑO PARA TABLETS Y MÓVILES
+   Reduce las columnas cuando hay menos espacio.
+   ================================================== */
+
+@media (max-width: 800px) {
+    .rejilla {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .portada {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 520px) {
+    header {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 20px 5%;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    .rejilla {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        letter-spacing: -1px;
+    }
+
+    .bloque {
+        padding: 20px;
+    }
+
+    footer {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 22px 5%;
+    }
+}
+
+/* ==================================================
+   13. ACCESIBILIDAD
+   Reduce las animaciones si el usuario lo prefiere.
+   ================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#090b16">
+    <meta name="description" content="Mi portfolio de Desarrollo de Aplicaciones Web. Prácticas, proyectos y aprendizaje.">
+
+    <title>Mi portfolio | DAW</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="barra">
+        <a href="#" class="logo" aria-label="Volver al inicio">
+            portfolio<span>.dev</span>
+        </a>
+
+        <span class="estado">ESTUDIANTE · DAW</span>
+    </header>
+
+    <main>
+        <!-- PORTADA -->
+        <section class="hero">
+            <p class="etiqueta">HOLA, MUNDO. 👋</p>
+
+            <h1>
+                Mi camino en el<br>
+                <span>desarrollo web.</span>
+            </h1>
+
+            <p class="intro">
+                Soy <strong>Mi nombre</strong>, estudiante de Desarrollo
+                de Aplicaciones Web. Este espacio reúne mis prácticas,
+                proyectos y todo lo que voy aprendiendo durante el curso.
+            </p>
+
+            <a href="#asignaturas" class="boton">
+                Explorar asignaturas <span aria-hidden="true">↓</span>
+            </a>
+
+            <div class="codigo-decorativo" aria-label="Aprendiendo a programar">
+                <span aria-hidden="true">&lt;</span>
+                aprender /
+                <span aria-hidden="true">&gt;</span>
+                <span class="cursor-terminal" aria-hidden="true">_</span>
+            </div>
+        </section>
+
+        <!-- ASIGNATURAS -->
+        <section id="asignaturas">
+            <div class="titulo-seccion">
+                <div>
+                    <p class="etiqueta">01 — FORMACIÓN</p>
+                    <h2>Mis asignaturas</h2>
+                </div>
+
+                <p>Selecciona un área para explorar mis trabajos.</p>
+            </div>
+
+            <div class="rejilla">
+
+                <!-- PROGRAMACIÓN -->
+                <article class="tarjeta">
+                    <div class="numero turquesa">01 / CODE</div>
+
+                    <div class="icono turquesa" aria-hidden="true">
+                        &lt;/&gt;
+                    </div>
+
+                    <h3>Programación</h3>
+
+                    <p>
+                        Java, Python, pseudocódigo y resolución
+                        de problemas.
+                    </p>
+
+                    <a href="portfolio-programacion/index.html"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Abrir asignatura
+                        <span aria-hidden="true">↗</span>
+                    </a>
+                </article>
+
+                <!-- BASES DE DATOS -->
+                <article class="tarjeta">
+                    <div class="numero naranja">02 / DATA</div>
+
+                    <div class="icono naranja" aria-hidden="true">
+                        ▤
+                    </div>
+
+                    <h3>Bases de Datos</h3>
+
+                    <p>
+                        SQL, diseño de bases de datos y gestión
+                        de información.
+                    </p>
+
+                    <a href="portfolios/portofolio-bases-de-datos/index.html"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Abrir asignatura
+                        <span aria-hidden="true">↗</span>
+                    </a>
+                </article>
+
+                <!-- LENGUAJE DE MARCAS -->
+                <article class="tarjeta">
+                    <div class="numero violeta">03 / WEB</div>
+
+                    <div class="icono violeta" aria-hidden="true">
+                        ◇
+                    </div>
+
+                    <h3>Lenguaje de Marcas</h3>
+
+                    <p>
+                        HTML, CSS y creación de páginas web.
+                    </p>
+
+                    <a href="portfolios/portofolio-lenguaje-de-marcas/index.html"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Abrir asignatura
+                        <span aria-hidden="true">↗</span>
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- SOBRE MÍ -->
+        <section class="perfil">
+            <div class="perfil-numero">02</div>
+
+            <div>
+                <p class="etiqueta">SOBRE MÍ</p>
+
+                <h2>Aprender. Practicar. Mejorar.</h2>
+
+                <p>
+                    Estoy cursando Desarrollo de Aplicaciones Web (DAW).
+                    Utilizo este portfolio para organizar mis ejercicios,
+                    documentar mis avances y desarrollar nuevas habilidades.
+                </p>
+            </div>
+        </section>
+
+        <!-- TERMINAL DECORATIVA -->
+        <section class="terminal js-animar" aria-label="Terminal de ejemplo">
+            <div class="terminal-cabecera">
+                <div class="terminal-puntos" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <span>mi-terminal.dev</span>
+            </div>
+
+            <div class="terminal-contenido">
+                <p>
+                    <span class="terminal-prompt">usuario@daw</span>:~$
+                    <span class="terminal-comando"> whoami</span>
+                </p>
+
+                <p class="terminal-respuesta">
+                    Estudiante de DAW, futuro desarrollador web.
+                </p>
+
+                <p>
+                    <span class="terminal-prompt">usuario@daw</span>:~$
+                    <span class="terminal-comando"> echo $OBJETIVO</span>
+                </p>
+
+                <p class="terminal-respuesta">
+                    Aprender algo nuevo cada día.
+                    <span class="terminal-cursor" aria-hidden="true">▋</span>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- BOTÓN SORPRESA -->
+    <button
+        type="button"
+        class="modo-boton"
+        id="modoHacker"
+        aria-pressed="false"
+        aria-label="Activar modo hacker"
+    >
+        <span aria-hidden="true">⌘</span>
+        <span id="textoModo">Modo hacker</span>
+    </button>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <span>portfolio.dev</span>
+        <span>Hecho con HTML, CSS y JavaScript</span>
+        <span>© <span id="anio">2026</span></span>
+    </footer>
+
+    <script>
+        // Actualiza el año automáticamente.
+        document.getElementById("anio").textContent =
+            new Date().getFullYear();
+
+        // Sorpresa: activar o desactivar el modo hacker.
+        const botonModo = document.getElementById("modoHacker");
+        const textoModo = document.getElementById("textoModo");
+
+        botonModo.addEventListener("click", () => {
+            const activo = document.body.classList.toggle("modo-hacker");
+
+            botonModo.setAttribute("aria-pressed", String(activo));
+
+            textoModo.textContent = activo
+                ? "Desactivar modo hacker"
+                : "Modo hacker";
+
+            botonModo.setAttribute(
+                "aria-label",
+                activo
+                    ? "Desactivar modo hacker"
+                    : "Activar modo hacker"
+            );
+        });
+
+        // Animar secciones cuando entran en pantalla.
+        const elementosAnimados = document.querySelectorAll(
+            ".titulo-seccion, .tarjeta, .perfil, .terminal"
+        );
+
+        // Si el navegador no soporta IntersectionObserver,
+        // los elementos siguen siendo visibles.
+        if ("IntersectionObserver" in window) {
+            const observador = new IntersectionObserver(
+                (entradas, observer) => {
+                    entradas.forEach((entrada) => {
+                        if (entrada.isIntersecting) {
+                            entrada.target.classList.add("visible");
+                            observer.unobserve(entrada.target);
+                        }
+                    });
+                },
+                {
+                    threshold: 0.12
+                }
+            );
+
+            elementosAnimados.forEach((elemento) => {
+                elemento.classList.add("js-animar");
+                observador.observe(elemento);
+            });
+        }
+    </script>
+
+</body>
+</html>
