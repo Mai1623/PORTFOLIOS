@@ -1,0 +1,6 @@
+superclave
+clave candidata
+clave primeria (PK)
+clave secundaria
+clave ajena / foránea
+
