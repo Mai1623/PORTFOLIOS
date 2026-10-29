@@ -89,7 +89,7 @@ h3 {
     margin-top: 0;
 }
 
-/* Tarjetas de temas y ejercicios */
+/* Tarjetas de temas, actividades y documentos */
 .tema {
     background-color: #244A35;
     padding: 22px;
@@ -145,7 +145,7 @@ footer {
     border-radius: 25px 25px 0 0;
 }
 
-/* Foto de perfil, si se utiliza */
+/* Foto de perfil */
 .avatar {
     width: 150px;
     height: 150px;
