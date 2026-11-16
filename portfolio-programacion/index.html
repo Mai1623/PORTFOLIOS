@@ -7,110 +7,130 @@
 
     <title>Mi portfolio de DAW</title>
 
-    <!-- Conectamos el archivo de estilos -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Cabecera de la página -->
+    <!-- Cabecera -->
     <header>
-        <h1>Mi portfolio</h1>
-        <p>1º de Desarrollo de Aplicaciones Web</p>
+        <div class="cabecera-contenido">
+            <h1>Mi portfolio<span>.</span></h1>
+
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="#sobre-mi">Sobre mí</a>
+                <a href="#temas">Temas</a>
+            </nav>
+        </div>
     </header>
 
-    <!-- Menú principal -->
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#temas">Temas</a>
-    </nav>
-
-    <!-- Contenido principal -->
     <main>
 
-        <!-- Presentación personal -->
+        <!-- Presentación -->
         <section id="sobre-mi" class="presentacion">
 
-            <img src="img/Salidas-profesionales-del-FP-en-Desarrollo-de-Aplicaciones-Web-DAW1.jpg"
-                 alt="Avatar de mi perfil"
-                 class="avatar">
+            <div class="presentacion-texto">
+                <span class="etiqueta">ESTUDIANTE DE DAW</span>
 
-            <h2>Hola, soy Maitane</h2>
+                <h2>¡Hola! Soy Maitane</h2>
 
-            <p>
-                Soy estudiante de primero de DAW y este es mi portfolio de la asignatura de Programación.
-            </p>
+                <p>
+                    Soy estudiante de primero de Desarrollo de Aplicaciones Web
+                    y este es mi portfolio de la asignatura de Programación.
+                </p>
 
-            <p>
-                Aquí iré guardando los ejercicios y prácticas que vaya realizando durante el curso.
-            </p>
+                <p>
+                    Aquí iré recopilando los ejercicios, prácticas y proyectos
+                    que vaya realizando durante el curso.
+                </p>
+
+                <a href="#temas" class="boton">Ver mis trabajos ↓</a>
+            </div>
+
+            <div class="presentacion-imagen">
+                <img src="img/Salidas-profesionales-del-FP-en-Desarrollo-de-Aplicaciones-Web-DAW1.jpg"
+                     alt="Imagen de mi portfolio"
+                     class="avatar">
+            </div>
 
         </section>
 
-        <!-- Lista de temas -->
-        <section id="temas">
+        <!-- Temas -->
+        <section id="temas" class="seccion-temas">
 
-            <h2>Mis temas de programación</h2>
-
-            <p>
-                Selecciona un tema para ver sus ejercicios.
-            </p>
-
-            <div class="tema">
-                <h3>Tema 1 - Introducci&oacute;n a la programaci&oacute;n</h3>
-                <p>Ejercicios y prácticas del primer tema.</p>
-                <a href="tema-1/index.html">Ver tema</a>
+            <div class="titulo-seccion">
+                <span class="etiqueta">MI APRENDIZAJE</span>
+                <h2>Temas de programación</h2>
+                <p>Explora los ejercicios y prácticas que he realizado.</p>
             </div>
 
-            <div class="tema">
-                <h3>Tema 2 - Estructuras de Control</h3>
-                <p>Ejercicios y prácticas del segundo tema.</p>
-                <a href="tema-2/index.html">Ver tema</a>
-            </div>
-			            <div class="tema">
-                <h3>Tema 3 - Funciones y Procedimientos</h3>
-                <p>>Ejercicios y prácticas del tercer tema.</p>
-                <a href="tema-3/index.html">Ver tema</a>
-            </div>
+            <div class="contenedor-temas">
 
-            <div class="tema">
-                <h3>Tema 4 - Arrays y Cadenas</h3>
-                <p>>Ejercicios y prácticas del cuarto tema.</p>
-                <a href="tema-4/index.html">Ver tema</a>
-            </div>
+                <div class="tema">
+                    <span class="numero">01</span>
+                    <h3>Introducción a la programación</h3>
+                    <p>Ejercicios y prácticas del primer tema.</p>
+                    <a href="tema-1/index.html">Ver ejercicios →</a>
+                </div>
 
-            <div class="tema">
-                <h3>Tema 5 - </h3>
-                <p>Próximamente añadiré los ejercicios.</p>
-                <a href="tema-5/index.html">Ver tema</a>
-            </div>
-			
-            <div class="tema">
-                <h3>Tema 6 - l</h3>
-                <p>Próximamente añadiré los ejercicios.</p>
-                <a href="tema-6/index.html">Ver tema</a>
-            </div>
-			
-            <div class="tema">
-                <h3>Tema 7 - </h3>
-                <p>Próximamente añadiré los ejercicios.</p>
-                <a href="tema-7/index.html">Ver tema</a>
-            </div>
+                <div class="tema">
+                    <span class="numero">02</span>
+                    <h3>Estructuras de Control</h3>
+                    <p>Ejercicios y prácticas del segundo tema.</p>
+                    <a href="tema-2/index.html">Ver ejercicios →</a>
+                </div>
 
-            <div class="tema">
-                <h3>Tema 8 - </h3>
-                <p>Próximamente añadiré los ejercicios.</p>
-                <a href="tema-8/index.html">Ver tema</a>
+                <div class="tema">
+                    <span class="numero">03</span>
+                    <h3>Funciones y Procedimientos</h3>
+                    <p>Ejercicios y prácticas del tercer tema.</p>
+                    <a href="tema-3/index.html">Ver ejercicios →</a>
+                </div>
+
+                <div class="tema">
+                    <span class="numero">04</span>
+                    <h3>Arrays y Cadenas</h3>
+                    <p>Ejercicios y prácticas del cuarto tema.</p>
+                    <a href="tema-4/index.html">Ver ejercicios →</a>
+                </div>
+
+                <div class="tema pendiente">
+                    <span class="numero">05</span>
+                    <h3>Tema 5</h3>
+                    <p>Próximamente añadiré los ejercicios.</p>
+                    <a href="tema-5/index.html">Ver tema →</a>
+                </div>
+
+                <div class="tema pendiente">
+                    <span class="numero">06</span>
+                    <h3>Tema 6</h3>
+                    <p>Próximamente añadiré los ejercicios.</p>
+                    <a href="tema-6/index.html">Ver tema →</a>
+                </div>
+
+                <div class="tema pendiente">
+                    <span class="numero">07</span>
+                    <h3>Tema 7</h3>
+                    <p>Próximamente añadiré los ejercicios.</p>
+                    <a href="tema-7/index.html">Ver tema →</a>
+                </div>
+
+                <div class="tema pendiente">
+                    <span class="numero">08</span>
+                    <h3>Tema 8</h3>
+                    <p>Próximamente añadiré los ejercicios.</p>
+                    <a href="tema-8/index.html">Ver tema →</a>
+                </div>
+
+                <div class="tema pendiente">
+                    <span class="numero">09</span>
+                    <h3>Tema 9</h3>
+                    <p>Próximamente añadiré los ejercicios.</p>
+                    <a href="tema-9/index.html">Ver tema →</a>
+                </div>
+
             </div>
-
-            <div class="tema">
-                <h3>Tema 9 - </h3>
-                <p>Próximamente añadiré los ejercicios.</p>
-                <a href="tema-9/index.html">Ver tema</a>
-            </div>
-
-
 
         </section>
 
@@ -118,7 +138,7 @@
 
     <!-- Pie de página -->
     <footer>
-        <p>Portfolio de 1º DAW - Programación</p>
+        <p>© 2026 · Portfolio de Maitane · 1º DAW</p>
     </footer>
 
 </body>

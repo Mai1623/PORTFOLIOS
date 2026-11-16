@@ -1,147 +1,292 @@
 
-/* Estilos generales */
+/* CONFIGURACIÓN GENERAL */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: #17172B;
-    color: #F1EEFF;
-    font-family: Arial, sans-serif;
     margin: 0;
+    background-color: #E5E7EB;
+    color: #1F2937;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
 }
 
-/* Cabecera */
+/* CABECERA */
 header {
-    background: linear-gradient(135deg, #242044, #302653);
-    text-align: center;
-    padding: 30px 20px;
-    border-bottom: 2px solid #8B5CF6;
-    border-radius: 0 0 25px 25px;
+    background-color: #111827;
+    padding: 18px 8%;
+    border-bottom: 3px solid #2563EB;
+}
+
+.cabecera-contenido {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 header h1 {
-    color: #B9A0FF;
+    color: #FFFFFF;
+    font-size: 26px;
+    margin: 0;
 }
 
-/* Menú de navegación */
+header h1 span {
+    color: #38BDF8;
+}
+
+/* MENÚ */
 nav {
-    background-color: #211F38;
-    text-align: center;
-    padding: 15px;
-    margin: 15px 5%;
-    border: 1px solid #393353;
-    border-radius: 20px;
+    display: flex;
+    gap: 25px;
 }
 
 nav a {
-    display: inline-block;
-    color: #F1EEFF;
+    color: #D1D5DB;
     text-decoration: none;
-    margin: 5px 10px;
-    padding: 8px 14px;
-    border-radius: 20px;
     transition: 0.3s;
 }
 
 nav a:hover {
-    background-color: #8B5CF6;
-    color: white;
+    color: #38BDF8;
 }
 
-/* Contenido principal */
+/* CONTENIDO */
 main {
-    width: 80%;
-    max-width: 1100px;
-    margin: 30px auto;
+    width: 85%;
+    max-width: 1200px;
+    margin: 55px auto;
 }
 
-/* Presentación */
+/* PRESENTACIÓN */
 .presentacion {
+    background-color: #FFFFFF;
+    border-radius: 14px;
+    padding: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 75px;
+    border: 1px solid #D1D5DB;
+    box-shadow: 0 5px 20px #1118270D;
+}
+
+.presentacion-texto {
+    flex: 1;
+}
+
+.etiqueta {
+    color: #2563EB;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.presentacion h2 {
+    font-size: 38px;
+    color: #111827;
+    margin: 12px 0;
+}
+
+.presentacion p {
+    color: #4B5563;
+    max-width: 600px;
+}
+
+.presentacion-imagen {
+    flex: 0 0 260px;
     text-align: center;
-    padding: 30px;
-    margin-bottom: 30px;
-    background-color: #211F38;
-    border: 1px solid #393353;
-    border-radius: 25px;
 }
 
-/* Avatar */
 .avatar {
-    width: 160px;
-    height: 160px;
+    width: 240px;
+    height: 240px;
     object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid #A78BFA;
-    box-shadow: 0 0 20px #8B5CF633;
+    border-radius: 14px;
+    border: 4px solid #2563EB;
 }
 
-/* Títulos */
-h2 {
-    color: #B9A0FF;
+/* BOTÓN */
+.boton {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 11px 22px;
+    background-color: #2563EB;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    transition: 0.3s;
 }
 
-h3 {
-    color: #C4B5FD;
+.boton:hover {
+    background-color: #1D4ED8;
 }
 
-/* Tarjetas de temas */
+/* SECCIÓN TEMAS */
+.seccion-temas {
+    margin-bottom: 70px;
+}
+
+.titulo-seccion {
+    margin-bottom: 35px;
+}
+
+.titulo-seccion h2 {
+    font-size: 32px;
+    color: #111827;
+    margin: 8px 0;
+}
+
+.titulo-seccion p {
+    color: #4B5563;
+}
+
+/* CUADRÍCULA */
+.contenedor-temas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+/* TARJETAS */
 .tema {
-    background-color: #211F38;
-    border: 1px solid #41365F;
-    border-left: 5px solid #8B5CF6;
-    padding: 22px;
-    margin: 20px 0;
-    border-radius: 20px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #D1D5DB;
+    border-top: 4px solid #2563EB;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .tema:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px #00000040;
-    border-color: #A78BFA;
+    box-shadow: 0 10px 25px #11182720;
+    border-top-color: #38BDF8;
 }
 
-/* Enlaces de los temas */
+.numero {
+    background-color: #DBEAFE;
+    color: #1D4ED8;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+.tema h3 {
+    color: #111827;
+    font-size: 18px;
+    margin: 15px 0 5px;
+}
+
+.tema p {
+    color: #4B5563;
+    font-size: 14px;
+}
+
 .tema a {
-    display: inline-block;
-    color: white;
-    background-color: #6D4ACD;
+    color: #2563EB;
+    font-weight: bold;
     text-decoration: none;
-    padding: 9px 16px;
-    margin-top: 8px;
-    border-radius: 20px;
-    transition: 0.3s;
+    margin-top: auto;
+    padding-top: 12px;
 }
 
 .tema a:hover {
-    background-color: #9B7AFF;
-    transform: scale(1.03);
+    color: #0284C7;
 }
 
-/* Pie de página */
+/* TEMAS PENDIENTES */
+.pendiente {
+    background-color: #F3F4F6;
+    border-top-color: #6B7280;
+}
+
+.pendiente .numero {
+    background-color: #E5E7EB;
+    color: #4B5563;
+}
+
+.pendiente a {
+    color: #6B7280;
+}
+
+/* PIE DE PÁGINA */
 footer {
-    background-color: #211F38;
-    color: #C8C1DF;
+    background-color: #111827;
+    color: #D1D5DB;
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-    border-top: 2px solid #8B5CF6;
-    border-radius: 25px 25px 0 0;
+    padding: 22px;
+    font-size: 14px;
+    border-top: 3px solid #2563EB;
 }
 
-/* Adaptación a móviles */
-@media (max-width: 600px) {
-    main {
-        width: 90%;
-    }
-
-    nav {
-        margin: 10px;
+/* TABLETS */
+@media (max-width: 900px) {
+    .contenedor-temas {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .presentacion {
+        padding: 35px;
+    }
+}
+
+/* MÓVILES */
+@media (max-width: 600px) {
+    header {
         padding: 20px;
     }
 
-    .tema {
-        padding: 16px;
+    .cabecera-contenido {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    main {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .presentacion {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .presentacion h2 {
+        font-size: 29px;
+    }
+
+    .presentacion-imagen {
+        flex: auto;
+    }
+
+    .avatar {
+        width: 190px;
+        height: 190px;
+    }
+
+    .contenedor-temas {
+        grid-template-columns: 1fr;
+    }
+
+    .titulo-seccion h2 {
+        font-size: 27px;
     }
 }
