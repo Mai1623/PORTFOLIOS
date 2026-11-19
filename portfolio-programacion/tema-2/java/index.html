@@ -5,214 +5,279 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Java - Tema 2</title>
+    <title>Ejercicios Java - Estructuras de Control</title>
 
-    <!-- Conectamos con el CSS principal -->
-    <link rel="stylesheet" href="../../style.css">
+	<link rel="stylesheet" href="../../style.css">
 </head>
 
 <body>
 
+    <!-- CABECERA -->
     <header>
-        <h1>Mi portfolio</h1>
-        <p>1.º de Desarrollo de Aplicaciones Web</p>
-    </header>
+        <div class="cabecera-contenido">
 
-    <nav>
-        <a href="../../index.html">Inicio</a>
-        <a href="../../index.html#sobre-mi">Sobre mí</a>
-        <a href="../../index.html#temas">Temas</a>
-    </nav>
+            <h1>Mi portfolio<span>.</span></h1>
+
+            <nav>
+                <a href="../../index.html">Inicio</a>
+                <a href="../../index.html#sobre-mi">Sobre mí</a>
+                <a href="../index.html">Temas</a>
+            </nav>
+
+        </div>
+    </header>
 
     <main>
 
-        <section>
-            <h2>Java - Tema 2</h2>
+        <!-- PRESENTACIÓN -->
+        <section class="presentacion">
 
-            <p>
-                En este apartado guardaré los programas y ejercicios que vaya realizando con Java.
-            </p>
+            <div class="presentacion-texto">
+
+                <span class="etiqueta">PROGRAMACIÓN · JAVA</span>
+
+                <h2>Estructuras de Control</h2>
+
+                <p>
+                    En este apartado se encuentran los ejercicios
+                    realizados durante el tema de estructuras de
+                    control, trabajando las condiciones, los bucles
+                    y la lógica de programación.
+                </p>
+
+                <a href="#ejercicios" class="boton">
+                    Ver ejercicios ↓
+                </a>
+
+            </div>
+
         </section>
 
-        <section>
-            <h2>Mis ejercicios</h2>
-            
-			<div class="tema">
-                <h3>Ejercicio 1</h3>
-                <a href="ejercicio1.java">Ver código</a>
-            </div>
-			
-            <div class="tema">
-                <h3>Ejercicio 2</h3>            
-                <a href="ejercicio2.java">Ver código</a>
+
+        <!-- EJERCICIOS -->
+        <section id="ejercicios" class="seccion-temas">
+
+            <div class="titulo-seccion">
+
+                <span class="etiqueta">MIS PRÁCTICAS</span>
+
+                <h2>Ejercicios</h2>
+
+                <p>
+                    Actividades prácticas realizadas en Java
+                    durante el desarrollo del tema.
+                </p>
+
             </div>
 
-            <div class="tema">
-                <h3>Ejercicio 3</h3>
-                 <a href="ejercicio3.java">Ver código</a>
+
+            <div class="contenedor-temas">
+
+                <div class="tema">
+                    <span class="numero">01</span>
+                    <h3>Ejercicio 1 - Toma de decisiones</h3>
+                    <p>Uso de condiciones para controlar la ejecución de instrucciones.</p>
+                    <a href="ARCHIVO_01">Ver ejercicio →</a>
+                </div>
+
+                <div class="tema">
+                    <span class="numero">02</span>
+                    <h3>Ejercicio 2 - Comparación de valores</h3>
+                    <p>Aplicación de operadores relacionales y condiciones.</p>
+                    <a href="ARCHIVO_02">Ver ejercicio →</a>
+                </div>
+
+                <div class="tema">
+                    <span class="numero">03</span>
+                    <h3>Ejercicio 3 - Condiciones múltiples</h3>
+                    <p>Resolución de problemas mediante varias condiciones.</p>
+                    <a href="ARCHIVO_03">Ver ejercicio →</a>
+                </div>
+
+                <div class="tema">
+                    <span class="numero">04</span>
+                    <h3>Ejercicio 4 - Selección de opciones</h3>
+                    <p>Uso de switch para seleccionar diferentes alternativas.</p>
+                    <a href="ARCHIVO_04">Ver ejercicio →</a>
+                </div>
+
+                <div class="tema">
+                    <span class="numero">05</span>
+                    <h3>Ejercicio 5 - Repetición con for</h3>
+                    <p>Repetición de instrucciones mediante el bucle for.</p>
+                    <a href="ARCHIVO_05">Ver ejercicio →</a>
+                </div>
+
+                <div class="tema">
+                    <span class="numero">06</span>
+                    <h3>Ejercicio 6 - Repetición con while</h3>
+                    <p>Control de repeticiones mediante una condición.</p>
+                    <a href="ARCHIVO_06">Ver ejercicio →</a>
+                </div>
+
+                <div class="tema">
+                    <span class="numero">07</span>
+                    <h3>Ejercicio 7 - Bucle do-while</h3>
+                    <p>Repetición de instrucciones ejecutadas al menos una vez.</p>
+                    <a href="ARCHIVO_07">Ver ejercicio →</a>
+                </div>
+
+                <div class="tema">
+                    <span class="numero">08</span>
+                    <h3>Ejercicio 8 - Contadores y acumuladores</h3>
+                    <p>Control de cantidades y acumulación de resultados.</p>
+                    <a href="ARCHIVO_08">Ver ejercicio →</a>
+                </div>
+
+                <div class="tema">
+                    <span class="numero">09</span>
+                    <h3>Ejercicio 9 - Control de bucles</h3>
+                    <p>Modificación del flujo de ejecución de las repeticiones.</p>
+                    <a href="ARCHIVO_09">Ver ejercicio →</a>
+                </div>
+
+                <div class="tema">
+                    <span class="numero">10</span>
+                    <h3>Ejercicio 10 - Interrupción de bucles</h3>
+                    <p>Uso de break para finalizar una repetición.</p>
+                    <a href="ARCHIVO_10">Ver ejercicio →</a>
+                </div>
+
+                <div class="tema">
+                    <span class="numero">11</span>
+                    <h3>Ejercicio 11 - Salto de iteraciones</h3>
+                    <p>Uso de continue para omitir determinadas repeticiones.</p>
+                    <a href="ARCHIVO_11">Ver ejercicio →</a>
+                </div>
+
+                <div class="tema">
+                    <span class="numero">12</span>
+                    <h3>Ejercicio 12 - Bucles anidados</h3>
+                    <p>Combinación de varios bucles en un mismo programa.</p>
+                    <a href="ARCHIVO_12">Ver ejercicio →</a>
+                </div>
+
+                <div class="tema">
+                    <span class="numero">13</span>
+                    <h3>Ejercicio 13 - Validación de datos</h3>
+                    <p>Comprobación de entradas para evitar datos incorrectos.</p>
+                    <a href="ARCHIVO_13">Ver ejercicio →</a>
+                </div>
+
+                <div class="tema">
+                    <span class="numero">14</span>
+                    <h3>Ejercicio 14 - Menús interactivos</h3>
+                    <p>Creación de menús con diferentes opciones de ejecución.</p>
+                    <a href="ARCHIVO_14">Ver ejercicio →</a>
+                </div>
+
+                <div class="tema">
+                    <span class="numero">15</span>
+                    <h3>Ejercicio 15 - Resolución de problemas</h3>
+                    <p>Aplicación de bucles para resolver diferentes situaciones.</p>
+                    <a href="ARCHIVO_15">Ver ejercicio →</a>
+                </div>
+
+                <div class="tema">
+                    <span class="numero">16</span>
+                    <h3>Ejercicio 16 - Condiciones y repetición</h3>
+                    <p>Combinación de estructuras condicionales y repetitivas.</p>
+                    <a href="ARCHIVO_16">Ver ejercicio →</a>
+                </div>
+
+                <div class="tema">
+                    <span class="numero">17</span>
+                    <h3>Ejercicio 17 - Control de entradas</h3>
+                    <p>Gestión de los datos introducidos por el usuario.</p>
+                    <a href="ARCHIVO_17">Ver ejercicio →</a>
+                </div>
+
+                <div class="tema">
+                    <span class="numero">18</span>
+                    <h3>Ejercicio 18 - Decisiones en programas</h3>
+                    <p>Resolución de situaciones mediante estructuras de selección.</p>
+                    <a href="ARCHIVO_18">Ver ejercicio →</a>
+                </div>
+
+                <div class="tema">
+                    <span class="numero">19</span>
+                    <h3>Ejercicio 19 - Programación estructurada</h3>
+                    <p>Integración de diferentes estructuras de control.</p>
+                    <a href="ARCHIVO_19">Ver ejercicio →</a>
+                </div>
+
+                <div class="tema">
+                    <span class="numero">20</span>
+                    <h3>Ejercicio 20 - Gestión de errores</h3>
+                    <p>Tratamiento de situaciones inesperadas en los programas.</p>
+                    <a href="ARCHIVO_20">Ver ejercicio →</a>
+                </div>
+
+                <div class="tema">
+                    <span class="numero">21</span>
+                    <h3>Ejercicio 21 - Captura de excepciones</h3>
+                    <p>Uso de try y catch para controlar errores.</p>
+                    <a href="ARCHIVO_21">Ver ejercicio →</a>
+                </div>
+
+                <div class="tema">
+                    <span class="numero">22</span>
+                    <h3>Ejercicio 22 - Control de ejecución segura</h3>
+                    <p>Gestión de errores durante la ejecución del programa.</p>
+                    <a href="ARCHIVO_22">Ver ejercicio →</a>
+                </div>
+
+                <div class="tema">
+                    <span class="numero">23</span>
+                    <h3>Ejercicio 23 - Pruebas de funcionamiento</h3>
+                    <p>Comprobación de resultados y funcionamiento del código.</p>
+                    <a href="ARCHIVO_23">Ver ejercicio →</a>
+                </div>
+
+                <div class="tema">
+                    <span class="numero">24</span>
+                    <h3>Ejercicio 24 - Detección de errores</h3>
+                    <p>Identificación de fallos en los programas.</p>
+                    <a href="ARCHIVO_24">Ver ejercicio →</a>
+                </div>
+
+                <div class="tema">
+                    <span class="numero">25</span>
+                    <h3>Ejercicio 25 - Corrección de errores</h3>
+                    <p>Revisión del código y solución de errores.</p>
+                    <a href="ARCHIVO_25">Ver ejercicio →</a>
+                </div>
+
+                <div class="tema">
+                    <span class="numero">26</span>
+                    <h3>Ejercicio 26 - Documentación del código</h3>
+                    <p>Uso de comentarios para explicar el funcionamiento del código.</p>
+                    <a href="ARCHIVO_26">Ver ejercicio →</a>
+                </div>
+
+                <div class="tema">
+                    <span class="numero">27</span>
+                    <h3>Ejercicio 27 - Documentación Javadoc</h3>
+                    <p>Documentación de clases y métodos mediante Javadoc.</p>
+                    <a href="ARCHIVO_27">Ver ejercicio →</a>
+                </div>
+
+                <div class="tema">
+                    <span class="numero">28</span>
+                    <h3>Ejercicio 28 - Programa completo</h3>
+                    <p>Integración de distintas estructuras de control en un programa.</p>
+                    <a href="ARCHIVO_28">Ver ejercicio →</a>
+                </div>
+
             </div>
 
-            <div class="tema">
-                <h3>Ejercicio 4</h3>             
-                <a href="ejercicio4.java">Ver código</a>
-            </div>
-			
-            <div class="tema">
-                <h3>Ejercicio 5</h3>
-                <a href="ejercicio5.java">Ver código</a>
-            </div>
-			
-            <div class="tema">
-                <h3>Ejercicio 6</h3>
-                <a href="ejercicio6.java">Ver código</a>
-            </div>
-			
-            <div class="tema">
-                <h3>Ejercicio 7 </h3>
-                <a href="ejercicio7.java">Ver código</a>
-            </div>
-			
-            <div class="tema">
-                <h3>Ejercicio 8</h3>
-                <a href="ejercicio8.java">Ver código</a>
-            </div>
-			
-            <div class="tema">
-                <h3>Ejercicio 9</h3>
-                <a href="ejercicio9.java">Ver código</a>
-            </div>
-			
-            <div class="tema">
-                <h3>Ejercicio 10</h3>
-                <a href="ejercicio10.java">Ver código</a>
-            </div>
-			
-            <div class="tema">
-                <h3>Ejercicio 11</h3>
-                <a href="ejercicio11.java">Ver código</a>
-            </div>
-			
-            <div class="tema">
-                <h3>Ejercicio 12</h3>
-                <a href="ejercicio12.java">Ver código</a>
-            </div>
-			
-            <div class="tema">
-                <h3>Ejercicio 13</h3>
-                <a href="ejercicio13.java">Ver código</a>
-            </div>
-			
-            <div class="tema">
-                <h3>Ejercicio 14</h3>
-                <a href="ejercicio14.java">Ver código</a>
-            </div>
-			
-            <div class="tema">
-                <h3>Ejercicio 15</h3>
-                <a href="ejercicio15.java">Ver código</a>
-            </div>
-			
-            <div class="tema">
-                <h3>Ejercicio 16</h3>
-                <a href="ejercicio16.java">Ver código</a>
-            </div>
-			
-            <div class="tema">
-                <h3>Ejercicio 17</h3>
-                <a href="ejercicio17.java">Ver código</a>
-            </div>
-			
-            <div class="tema">
-                <h3>Ejercicio 18</h3>
-                <a href="ejercicio18.java">Ver código</a>
-            </div>
-			
-            <div class="tema">
-                <h3>Ejercicio 19</h3>
-                <a href="ejercicio19.java">Ver código</a>
-            </div>
-						
-            <div class="tema">
-                <h3>Ejercicio 19 - parte 2</h3>
-                <a href="ejercicio19BREAK.java">Ver código</a>
-            </div>
-									
-            <div class="tema">
-                <h3>Ejercicio 20</h3>
-                <a href="ejercicio20.java">Ver código</a>
-            </div>
-								
-            <div class="tema">
-                <h3>Ejercicio 20 - parte 2</h3>
-                <a href="ejercicio20DoWhile.java">Ver código</a>
-            </div>
-								
-            <div class="tema">
-                <h3>Ejercicio 21</h3>
-                <a href="ejercicio21.java">Ver código</a>
-            </div>
-								
-            <div class="tema">
-                <h3>Ejercicio 22</h3>
-                <a href="ejercicio22.java">Ver código</a>
-            </div>
-								
-            <div class="tema">
-                <h3>Ejercicio 23</h3>
-                <a href="ejercicio23.java">Ver código</a>
-            </div>
-								
-            <div class="tema">
-                <h3>Ejercicio 24</h3>
-                <a href="ejercicio24.java">Ver código</a>
-            </div>
-								
-            <div class="tema">
-                <h3>Ejercicio 24 - parte 2</h3>
-                <a href="ejercicio24SinContinue.java">Ver código</a>
-            </div>
-								
-            <div class="tema">
-                <h3>Ejercicio 25</h3>
-                <a href="ejercicio25.java">Ver código</a>
-            </div>
-								
-            <div class="tema">
-                <h3>Ejercicio 25 - parte 2</h3>
-                <a href="ejercicio25While.java">Ver código</a>
-            </div>
-								
-            <div class="tema">
-                <h3>Ejercicio 26</h3>
-                <a href="ejercicio26.java">Ver código</a>
-            </div>
-								
-            <div class="tema">
-                <h3>Ejercicio 26</h3>
-                <a href="ejercicio261.java">Ver código</a>
-            </div>
-								
-            <div class="tema">
-                <h3>Ejercicio 27</h3>
-                <a href="ejercicio27.java">Ver código</a>
-            </div>
-								
-            <div class="tema">
-                <h3>Ejercicio 28</h3>
-                <a href="ejercicio28.java">Ver código</a>
-            </div>
-		
-		
         </section>
-
-        <p>
-            <a href="../index.html">Volver al Tema 1</a>
-        </p>
 
     </main>
 
+    <!-- PIE DE PÁGINA -->
     <footer>
-        <p>Portfolio de 1.º DAW - Programación</p>
+        <p>© 2026 · Portfolio de Maitane · 1º DAW</p>
     </footer>
 
 </body>

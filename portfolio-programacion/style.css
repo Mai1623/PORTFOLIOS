@@ -1,5 +1,8 @@
 
-/* CONFIGURACIÓN GENERAL */
+/* =====================================
+   CONFIGURACIÓN GENERAL
+===================================== */
+
 * {
     box-sizing: border-box;
 }
@@ -16,7 +19,11 @@ body {
     line-height: 1.6;
 }
 
-/* CABECERA */
+
+/* =====================================
+   CABECERA
+===================================== */
+
 header {
     background-color: #111827;
     padding: 18px 8%;
@@ -42,7 +49,11 @@ header h1 span {
     color: #38BDF8;
 }
 
-/* MENÚ */
+
+/* =====================================
+   MENÚ DE NAVEGACIÓN
+===================================== */
+
 nav {
     display: flex;
     gap: 25px;
@@ -58,14 +69,22 @@ nav a:hover {
     color: #38BDF8;
 }
 
-/* CONTENIDO */
+
+/* =====================================
+   CONTENIDO PRINCIPAL
+===================================== */
+
 main {
     width: 85%;
     max-width: 1200px;
     margin: 55px auto;
 }
 
-/* PRESENTACIÓN */
+
+/* =====================================
+   PRESENTACIÓN
+===================================== */
+
 .presentacion {
     background-color: #FFFFFF;
     border-radius: 14px;
@@ -114,7 +133,11 @@ main {
     border: 4px solid #2563EB;
 }
 
-/* BOTÓN */
+
+/* =====================================
+   BOTONES
+===================================== */
+
 .boton {
     display: inline-block;
     margin-top: 15px;
@@ -130,7 +153,11 @@ main {
     background-color: #1D4ED8;
 }
 
-/* SECCIÓN TEMAS */
+
+/* =====================================
+   SECCIÓN DE TEMAS Y EJERCICIOS
+===================================== */
+
 .seccion-temas {
     margin-bottom: 70px;
 }
@@ -149,14 +176,22 @@ main {
     color: #4B5563;
 }
 
-/* CUADRÍCULA */
+
+/* =====================================
+   CUADRÍCULA
+===================================== */
+
 .contenedor-temas {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 22px;
 }
 
-/* TARJETAS */
+
+/* =====================================
+   TARJETAS DE TEMAS Y EJERCICIOS
+===================================== */
+
 .tema {
     background-color: #FFFFFF;
     padding: 25px;
@@ -207,7 +242,11 @@ main {
     color: #0284C7;
 }
 
-/* TEMAS PENDIENTES */
+
+/* =====================================
+   TEMAS PENDIENTES
+===================================== */
+
 .pendiente {
     background-color: #F3F4F6;
     border-top-color: #6B7280;
@@ -222,7 +261,11 @@ main {
     color: #6B7280;
 }
 
-/* PIE DE PÁGINA */
+
+/* =====================================
+   PIE DE PÁGINA
+===================================== */
+
 footer {
     background-color: #111827;
     color: #D1D5DB;
@@ -232,8 +275,13 @@ footer {
     border-top: 3px solid #2563EB;
 }
 
-/* TABLETS */
+
+/* =====================================
+   TABLETS
+===================================== */
+
 @media (max-width: 900px) {
+
     .contenedor-temas {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -241,10 +289,16 @@ footer {
     .presentacion {
         padding: 35px;
     }
+
 }
 
-/* MÓVILES */
+
+/* =====================================
+   MÓVILES
+===================================== */
+
 @media (max-width: 600px) {
+
     header {
         padding: 20px;
     }
@@ -289,4 +343,5 @@ footer {
     .titulo-seccion h2 {
         font-size: 27px;
     }
+
 }
