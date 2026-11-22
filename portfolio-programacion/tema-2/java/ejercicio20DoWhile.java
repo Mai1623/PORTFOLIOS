@@ -13,7 +13,12 @@ Este tipo de algoritmos se llaman acumuladores
 
 import java.util.Scanner; 
 
+/** Suma números introducidos por teclado hasta recibir un cero. */
+/** Suma los números introducidos hasta que se escribe un cero.
+ * @author Maitane Navarro
+ */
 public class ejercicio20DoWhile { 
+    /** Repite la lectura y acumulación de números mediante do-while. */
     public static void main(String[] args) { 
         Scanner teclado = new Scanner(System.in); 
         // Variable que guardará el número introducido

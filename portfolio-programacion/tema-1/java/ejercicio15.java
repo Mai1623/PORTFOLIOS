@@ -6,8 +6,10 @@
 // - Descontando el importe de un total de oro guardado en otra variable.
 // - Mostrando el estado final de la mochila como llena.
 
+/** Simula la compra de pociones y actualiza el inventario y el oro disponible. */
 public class ejercicio15 {
-	public static  void main(String[] args) {
+	/** Ejecuta la simulación y muestra el estado final del inventario. */
+	public static void main(String[] args) {
             // variables
            int cantidadPociones = 5;
            double precioPocion = 15.5;

@@ -17,7 +17,11 @@ solicitar una nota numerica y mostrar la calificacion correspondiente
 
 import java.util.Scanner;
 
+/** Convierte una nota numérica en una calificación textual mediante switch. */
 public class ejercicio8 {
+    /** Solicita una nota, comprueba su rango y muestra la calificación.
+     * @param args argumentos de la ejecución
+     */
     public static void main(String[] args) {
         // Iniciamos el Scanner
         Scanner teclado = new Scanner(System.in);

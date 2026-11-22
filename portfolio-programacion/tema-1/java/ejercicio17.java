@@ -3,8 +3,10 @@
        
     import java.util.Scanner;
 
+/** Calcula el precio final de un producto aplicando una constante de descuento. */
 public class ejercicio17 {
 
+    /** Calcula y muestra el descuento y el precio final. */
     public static void main(String[] args) {
         // el valor no puede cambiar y guarda numemos con decimales
         final double DESCUENTO = 0.15;

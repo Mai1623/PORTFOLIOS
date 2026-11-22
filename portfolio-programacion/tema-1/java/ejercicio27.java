@@ -21,8 +21,10 @@ Primera Parte
  */
 import java.util.Scanner;
 
+/** Calcula el precio de una entrada de cine según la edad del cliente. */
 public class ejercicio27 {
 
+    /** Lee los datos del cliente y muestra la tarifa correspondiente. */
     public static void main(String[] args) {
         //leer lo que escribimos
         Scanner teclado = new Scanner(System.in);

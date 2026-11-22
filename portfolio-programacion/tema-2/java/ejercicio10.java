@@ -8,8 +8,14 @@ Escaleno: ningún lado igual*/
 
 import java.util.Scanner; 
 
+/** Comprueba si tres lados forman un triángulo y lo clasifica.
+ * @author Maitane Navarro
+ */
 public class ejercicio10 {
 
+    /** Ejecuta el ejercicio y muestra el resultado por consola.
+     * @param args argumentos de la ejecución
+     */
     public static void main(String[] args) { 
 
         Scanner teclado = new Scanner(System.in); 

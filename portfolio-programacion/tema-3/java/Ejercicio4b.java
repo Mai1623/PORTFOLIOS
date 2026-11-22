@@ -17,8 +17,10 @@ Eligiendo el usuario que quiere hacer con un switch
 
 import java.util.Scanner;
 
+/** Calculadora modular que separa las operaciones en métodos estáticos. */
 public class Ejercicio4b {
 
+    /** Lee los operandos, solicita una operación y muestra el resultado. */
     public static void main(String[] args) {
 
         Scanner teclado = new Scanner(System.in);
@@ -98,26 +100,31 @@ public class Ejercicio4b {
     }
 
     // Método que suma dos números decimales.
+    /** @return la suma de dos números */
     public static double sumar(double a, double b) {
         return a + b;
     }
 
     // Método que resta dos números decimales.
+    /** @return la resta del segundo número al primero */
     public static double restar(double a, double b) {
         return a - b;
     }
 
     // Método que multiplica dos números decimales.
+    /** @return el producto de dos números */
     public static double multiplicar(double a, double b) {
         return a * b;
     }
 
     // Método que multiplica tres números decimales.
+    /** @return el producto de tres números */
     public static double multiplicar(double a, double b, double c) {
         return a * b * c;
     }
 
     // Método que divide dos números decimales.
+    /** @return el cociente del primer número entre el segundo */
     public static double dividir(double a, double b) {
         return a / b;
     }

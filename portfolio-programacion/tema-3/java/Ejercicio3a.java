@@ -11,8 +11,10 @@ iniciacion          recibir un precio y devolver el precio con un descuento fijo
  */
 
 import java.util.Scanner;
+/** Calcula el importe de una compra con un descuento fijo del diez por ciento. */
 public class Ejercicio3a {
 
+    /** Lee el precio y muestra el importe con descuento. */
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
 
@@ -32,6 +34,11 @@ public class Ejercicio3a {
 
     // Recibe el precio y devuelve el importe con un descuento del 10 %.
     // Double porque pueden ser decimales.
+    /**
+     * Calcula el precio final aplicando un descuento del diez por ciento.
+     * @param precio precio inicial de la compra
+     * @return precio después de aplicar el descuento
+     */
     public static double calcularImporte(double precio) {
         return precio - (precio * 0.10);
     }

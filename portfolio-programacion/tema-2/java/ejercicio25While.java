@@ -9,7 +9,13 @@
  */
 
 import java.util.Scanner;
+/** Calcula el factorial de un número utilizando un bucle while.
+ * @author Maitane Navarro
+ */
 public class ejercicio25While {
+    /** Ejecuta el ejercicio y muestra el resultado por consola.
+     * @param args argumentos de la ejecución
+     */
     public static void main(String[] args) {
         // Creamos un Scanner para leer el teclado.
         Scanner teclado = new Scanner(System.in);

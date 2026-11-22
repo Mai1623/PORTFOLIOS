@@ -9,7 +9,11 @@ Mostrar usando un for y el continue solo los numeros pares desde el 1 al 10.
  */
 
 
+/** Muestra los números pares del 1 al 10 utilizando continue. */
 public class ejercicio17 {
+    /** Recorre los números y omite los impares.
+     * @param args argumentos de la ejecución
+     */
     public static void main(String[] args) {
         // Iniciamos desde el 1 y que vaya hasta el 10, incrementando de 1 en 1
         for (int num = 1; num <= 10; num++) {
