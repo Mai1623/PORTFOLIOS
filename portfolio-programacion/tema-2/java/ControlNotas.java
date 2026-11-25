@@ -7,10 +7,7 @@ import java.util.Scanner;
  */
 public class ControlNotas {
 
-    /**
-     * Lee las notas y utiliza condicionales, un bucle y una sentencia switch.
-     * @param args argumentos de la ejecución
-     */
+
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
         int nota = 0;

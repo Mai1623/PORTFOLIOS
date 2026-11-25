@@ -4,8 +4,7 @@
  */
 
 /**
- *
- * @author 06_1DAW
+ * @author Maitane Navarro
  */
 
 import java.util.Scanner;

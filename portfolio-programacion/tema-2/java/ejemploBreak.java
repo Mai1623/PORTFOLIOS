@@ -4,7 +4,6 @@
 public class ejemploBreak {
 
     /** Recorre los números del 1 al 10 y se detiene al llegar al 5.
-     * @param args argumentos de la ejecución
      */
     public static void main(String[] args) {
         for (int i = 1; i <= 10; i++) {

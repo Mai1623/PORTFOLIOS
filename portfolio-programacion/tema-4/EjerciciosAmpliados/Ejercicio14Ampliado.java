@@ -67,8 +67,7 @@ public class Ejercicio14Ampliado {
             }
 
             // Mostrar cuántas veces aparece cada número
-            System.out.println("El número " + buscarNumeros[i] +
-                    " aparece " + contadorAmpliacion + " veces.");
+            System.out.println("El número " + buscarNumeros[i] + " aparece " + contadorAmpliacion + " veces.");
         }
     }
 }

@@ -30,15 +30,6 @@ public static int calcularAreaRectangulo(int base, int altura) { return base * a
 /** Reutiliza un método para calcular el área de varios rectángulos. */
 public class ejercicio1 {
 
-    // Declara un método público y estático que calcula el área de un rectángulo.
-    // Recibe la base y la altura como números enteros.
-    // Devuelve el resultado de multiplicar la base por la altura.
-    /**
-     * Calcula el área de un rectángulo.
-     * @param base longitud de la base
-     * @param altura longitud de la altura
-     * @return área calculada
-     */
     public static int calcularAreaRectangulo(int base, int altura) {
 
         // Calcula el área del rectángulo y devuelve el resultado.

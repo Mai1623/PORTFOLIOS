@@ -17,10 +17,6 @@ Crea también una clase Ejercicio5 con un método main que invoque los tres mét
 
 /**
  *
- * @author Maitane 
- */
-/**
- *
  * @author Maitane Navarro
  */
 

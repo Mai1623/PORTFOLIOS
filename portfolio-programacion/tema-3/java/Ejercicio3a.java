@@ -34,11 +34,7 @@ public class Ejercicio3a {
 
     // Recibe el precio y devuelve el importe con un descuento del 10 %.
     // Double porque pueden ser decimales.
-    /**
-     * Calcula el precio final aplicando un descuento del diez por ciento.
-     * @param precio precio inicial de la compra
-     * @return precio después de aplicar el descuento
-     */
+
     public static double calcularImporte(double precio) {
         return precio - (precio * 0.10);
     }

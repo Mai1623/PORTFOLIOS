@@ -14,7 +14,6 @@ import java.util.Scanner;
 public class ejercicio10 {
 
     /** Ejecuta el ejercicio y muestra el resultado por consola.
-     * @param args argumentos de la ejecución
      */
     public static void main(String[] args) { 
 

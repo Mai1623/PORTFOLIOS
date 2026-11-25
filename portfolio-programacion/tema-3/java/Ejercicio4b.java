@@ -100,31 +100,31 @@ public class Ejercicio4b {
     }
 
     // Método que suma dos números decimales.
-    /** @return la suma de dos números */
+    /** return la suma de dos números */
     public static double sumar(double a, double b) {
         return a + b;
     }
 
     // Método que resta dos números decimales.
-    /** @return la resta del segundo número al primero */
+    /** return la resta del segundo número al primero */
     public static double restar(double a, double b) {
         return a - b;
     }
 
     // Método que multiplica dos números decimales.
-    /** @return el producto de dos números */
+    /** return el producto de dos números */
     public static double multiplicar(double a, double b) {
         return a * b;
     }
 
     // Método que multiplica tres números decimales.
-    /** @return el producto de tres números */
+    /** return el producto de tres números */
     public static double multiplicar(double a, double b, double c) {
         return a * b * c;
     }
 
     // Método que divide dos números decimales.
-    /** @return el cociente del primer número entre el segundo */
+    /** return el cociente del primer número entre el segundo */
     public static double dividir(double a, double b) {
         return a / b;
     }
