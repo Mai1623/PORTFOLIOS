@@ -23,6 +23,6 @@ package EjerciciosAmpliados;
  *
  * @author 06_1DAW
  */
-public class Ejercicioo34Ampliado {
+public class Ejercicio34Ampliado {
     
 }
