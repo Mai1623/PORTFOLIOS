@@ -1,48 +1,101 @@
 <!doctype html>
 <html lang="es">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Ejercicios de estructuras de control en Java.">
-  <title>Tema 2: Estructuras de control | Mi portfolio</title>
-  <link rel="stylesheet" href="../style.css">
+	<head>
+		<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+				<meta name="description" content="Ejercicios de estructuras de control en Java.">
+					<title>Tema 2: Estructuras de control | Mi portfolio</title>
+					<link rel="stylesheet" href="../style.css">
 </head>
-<body>
-<header class="cabecera"><div class="barra">
-  <a class="marca" href="../index.html">MI PORTFOLIO<span>.</span></a>
-  <nav aria-label="Navegación"><a href="../index.html">Inicio</a><a href="../index.html#temas">Mis temas</a></nav>
-</div></header>
-<main class="contenedor">
-  <div class="migas"><a href="../index.html">Inicio</a> / Tema 2</div>
-  <section class="titulo-pagina">
-    <span class="sobrelinea">Programación · 1.º DAW</span>
-    <h1>Tema 2: Estructuras de control</h1>
-    <p class="muted">Condiciones, bucles y sentencias de salto.</p>
-  </section>
-  <section class="panel"><h2>Ejemplos trabajados en clase</h2><ol class="lista-ejercicios">
-<li><a href="java/ejercicio10.java" target="_blank" rel="noopener">Condiciones if y else</a><span class="explicacion-ejercicio"> — Compruebo los lados de un triángulo y lo clasifico.</span></li>
-<li><a href="java/ejercicio8.java" target="_blank" rel="noopener">Selección con switch</a><span class="explicacion-ejercicio"> — Introduzco una nota y muestro la calificación correspondiente.</span></li>
-<li><a href="java/ejercicio17.java" target="_blank" rel="noopener">Bucle for y continue</a><span class="explicacion-ejercicio"> — Muestro los números pares saltando los impares.</span></li>
-<li><a href="java/ejercicio25While.java" target="_blank" rel="noopener">Bucle while</a><span class="explicacion-ejercicio"> — Calculo el factorial repitiendo una multiplicación.</span></li>
-<li><a href="java/ejercicio20DoWhile.java" target="_blank" rel="noopener">Bucle do-while</a><span class="explicacion-ejercicio"> — Sumo números hasta introducir cero.</span></li>
-<li><a href="java/ejemploBreak.java" target="_blank" rel="noopener">Uso de break</a><span class="explicacion-ejercicio"> — Termino un bucle cuando se cumple una condición.</span></li>
-<li><a href="java/ejemploContinue.java" target="_blank" rel="noopener">Uso de continue</a><span class="explicacion-ejercicio"> — Salto una vuelta del bucle cuando se cumple una condición.</span></li></ol></section>
-  <section class="panel">
-    <h2>Programa completo: control de notas</h2>
-    <p>En este ejercicio junto varias estructuras: un <code>while</code> para repetir, <code>if / else</code> para comprobar las notas, <code>switch</code> para mostrar la calificación, <code>continue</code> para saltar una nota incorrecta y <code>break</code> para terminar.</p>
-    <p><a href="java/ControlNotas.java">Ver ControlNotas.java →</a></p>
-    <h3>Pruebas que he realizado</h3>
-    <div class="tabla-scroll"><table class="tabla-pruebas">
-      <thead><tr><th>Datos introducidos</th><th>Resultado</th></tr></thead>
-      <tbody>
-        <tr><td>8</td><td>Notable</td></tr>
-        <tr><td>11</td><td>La nota no es válida</td></tr>
-        <tr><td>5</td><td>Suficiente</td></tr>
-        <tr><td>-1</td><td>Termina y muestra 2 notas válidas, suma 13 y media 6.5</td></tr>
-      </tbody>
-    </table></div>
-    <p class="nota-prueba">También he comprobado el caso de terminar sin introducir ninguna nota: el programa muestra que no hay notas válidas.</p>
-    <pre class="salida">Introduce una nota (0-10) o -1 para terminar: 8
+					<body>
+						<header class="cabecera">
+							<div class="barra">
+								<a class="marca" href="../index.html">MI PORTFOLIO<span>.</span>
+								</a>
+								<nav aria-label="Navegación">
+									<a href="../index.html">Inicio</a>
+									<a href="../index.html#temas">Mis temas</a>
+								</nav>
+							</div>
+						</header>
+						<main class="contenedor">
+							<div class="migas">
+								<a href="../index.html">Inicio</a> / Tema 2</div>
+							<section class="titulo-pagina">
+								<span class="sobrelinea">Programación · 1.º DAW</span>
+								<h1>Tema 2: Estructuras de control</h1>
+								<p class="muted">Condiciones, bucles y sentencias de salto.</p>
+							</section>
+							<section class="panel">
+								<h2>Ejemplos trabajados en clase</h2>
+								<ol class="lista-ejercicios">
+									<li>
+										<a href="java/ejercicio10.java" target="_blank" rel="noopener">Condiciones if y else</a>
+										<span class="explicacion-ejercicio"> — Compruebo los lados de un triángulo y lo clasifico.</span>
+									</li>
+									<li>
+										<a href="java/ejercicio8.java" target="_blank" rel="noopener">Selección con switch</a>
+										<span class="explicacion-ejercicio"> — Introduzco una nota y muestro la calificación correspondiente.</span>
+									</li>
+									<li>
+										<a href="java/ejercicio17.java" target="_blank" rel="noopener">Bucle for y continue</a>
+										<span class="explicacion-ejercicio"> — Muestro los números pares saltando los impares.</span>
+									</li>
+									<li>
+										<a href="java/ejercicio25While.java" target="_blank" rel="noopener">Bucle while</a>
+										<span class="explicacion-ejercicio"> — Calculo el factorial repitiendo una multiplicación.</span>
+									</li>
+									<li>
+										<a href="java/ejercicio20DoWhile.java" target="_blank" rel="noopener">Bucle do-while</a>
+										<span class="explicacion-ejercicio"> — Sumo números hasta introducir cero.</span>
+									</li>
+									<li>
+										<a href="java/ejemploBreak.java" target="_blank" rel="noopener">Uso de break</a>
+										<span class="explicacion-ejercicio"> — Termino un bucle cuando se cumple una condición.</span>
+									</li>
+									<li>
+										<a href="java/ejemploContinue.java" target="_blank" rel="noopener">Uso de continue</a>
+										<span class="explicacion-ejercicio"> — Salto una vuelta del bucle cuando se cumple una condición.</span>
+									</li>
+								</ol>
+							</section>
+							<section class="panel">
+								<h2>Programa completo: control de notas</h2>
+								<p>En este ejercicio junto varias estructuras: un <code>while</code> para repetir, <code>if / else</code> para comprobar las notas, <code>switch</code> para mostrar la calificación, <code>continue</code> para saltar una nota incorrecta y <code>break</code> para terminar.</p>
+								<p>
+									<a href="java/ControlNotas.java">Ver ControlNotas.java →</a>
+								</p>
+								<h3>Pruebas que he realizado</h3>
+								<div class="tabla-scroll">
+									<table class="tabla-pruebas">
+										<thead>
+											<tr>
+												<th>Datos introducidos</th>
+												<th>Resultado</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>8</td>
+												<td>Notable</td>
+											</tr>
+											<tr>
+												<td>11</td>
+												<td>La nota no es válida</td>
+											</tr>
+											<tr>
+												<td>5</td>
+												<td>Suficiente</td>
+											</tr>
+											<tr>
+												<td>-1</td>
+												<td>Termina y muestra 2 notas válidas, suma 13 y media 6.5</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<p class="nota-prueba">También he comprobado el caso de terminar sin introducir ninguna nota: el programa muestra que no hay notas válidas.</p>
+								<pre class="salida">Introduce una nota (0-10) o -1 para terminar: 8
 Notable
 Introduce una nota (0-10) o -1 para terminar: 11
 La nota no es válida.
@@ -52,27 +105,61 @@ Introduce una nota (0-10) o -1 para terminar: -1
 Notas válidas: 2
 Suma: 13
 Media: 6.5</pre>
-  </section>
-  <section class="panel">
-    <h2>Prueba y depuración</h2>
-    <p>Para revisar el programa, puedo poner un punto de interrupción justo después de leer la nota y avanzar paso a paso comprobando las variables <code>nota</code>, <code>suma</code> y <code>cantidad</code>.</p>
-    <div class="tabla-scroll"><table class="tabla-pruebas">
-      <thead><tr><th>Momento</th><th>nota</th><th>suma</th><th>cantidad</th></tr></thead>
-      <tbody>
-        <tr><td>Después de introducir 8</td><td>8</td><td>0</td><td>0</td></tr>
-        <tr><td>Después de procesar el 8</td><td>8</td><td>8</td><td>1</td></tr>
-        <tr><td>Al introducir 11 (no válida)</td><td>11</td><td>8</td><td>1</td></tr>
-        <tr><td>Después de procesar el 5</td><td>5</td><td>13</td><td>2</td></tr>
-      </tbody>
-    </table></div>
-    <p class="nota-prueba">En NetBeans, el punto de interrupción se coloca en la línea que lee la nota. Al ejecutar en modo depuración se pueden observar esos valores en cada paso.</p>
-  </section>
-  <section class="panel">
-    <h2>Comentarios en el código</h2>
-    <p>He añadido comentarios Javadoc en los ejercicios seleccionados para explicar qué hace cada programa y, cuando hay métodos, qué datos reciben y qué resultado devuelven.</p>
-  </section>
-  <a class="volver" href="../index.html#temas">← Volver a todos los temas</a>
-</main>
-<footer class="pie"><div class="pie-interior"><span>Portfolio de programación · 1.º DAW</span><a href="../index.html">Volver al inicio</a></div></footer>
-</body>
-</html>
+							</section>
+							<section class="panel">
+								<h2>Prueba y depuración</h2>
+								<p>Para revisar el programa, puedo poner un punto de interrupción justo después de leer la nota y avanzar paso a paso comprobando las variables <code>nota</code>, <code>suma</code> y <code>cantidad</code>.</p>
+								<div class="tabla-scroll">
+									<table class="tabla-pruebas">
+										<thead>
+											<tr>
+												<th>Momento</th>
+												<th>nota</th>
+												<th>suma</th>
+												<th>cantidad</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Después de introducir 8</td>
+												<td>8</td>
+												<td>0</td>
+												<td>0</td>
+											</tr>
+											<tr>
+												<td>Después de procesar el 8</td>
+												<td>8</td>
+												<td>8</td>
+												<td>1</td>
+											</tr>
+											<tr>
+												<td>Al introducir 11 (no válida)</td>
+												<td>11</td>
+												<td>8</td>
+												<td>1</td>
+											</tr>
+											<tr>
+												<td>Después de procesar el 5</td>
+												<td>5</td>
+												<td>13</td>
+												<td>2</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<p class="nota-prueba">En NetBeans, el punto de interrupción se coloca en la línea que lee la nota. Al ejecutar en modo depuración se pueden observar esos valores en cada paso.</p>
+							</section>
+							<section class="panel">
+								<h2>Comentarios en el código</h2>
+								<p>He añadido comentarios Javadoc en los ejercicios seleccionados para explicar qué hace cada programa y, cuando hay métodos, qué datos reciben y qué resultado devuelven.</p>
+							</section>
+							<a class="volver" href="../index.html#temas">← Volver a todos los temas</a>
+						</main>
+						<footer class="pie">
+							<div class="pie-interior">
+								<span>Portfolio de programación · 1.º DAW</span>
+								<a href="../index.html">Volver al inicio</a>
+							</div>
+						</footer>
+					</body>
+				</html>
